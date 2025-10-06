@@ -2,24 +2,25 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
+    name: 'Lorraine Rainey Rice Jeter',
     location: 'Houston, TX',
-    text: 'Pools Infinite made our backyard feel like a resort. The team was professional from start to finish, and the attention to detail was incredible.',
+    text: 'I love this company because they take the time and effort to be on time every day and get things done. My pool was done so fast I couldn’t believe it. Everything was efficient and everybody was polite.',
     rating: 5,
   },
   {
-    name: 'Michael Chen',
-    location: 'Sugar Land, TX',
-    text: 'We wanted to remodel our 20-year-old pool, and they completely transformed it. Modern, beautiful, and exactly what we envisioned.',
+    name: 'Andrea G.',
+    location: 'Houston, TX',
+    text: 'Eliseo and his team had our job done very quickly after coming out. We wanted fire bowls installed to our existing pool and he got the job done quickly and better than we imagined. Highly recommend hiring them for your pool design needs.',
     rating: 5,
   },
   {
-    name: 'Jennifer Martinez',
-    location: 'The Woodlands, TX',
-    text: 'From the 3D design to the final build, everything exceeded our expectations. Our family pool is now the neighborhood gathering spot!',
+    name: 'Unnamed Reviewer',
+    location: 'Houston, TX',
+    text: 'I am extremely pleased with the work that was recently done to remodel my inground swimming pool. The price was reasonable and the work was superb.',
     rating: 5,
   },
 ];
+
 
 const Testimonials = () => {
   return (

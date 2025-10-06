@@ -14,6 +14,32 @@ export default {
     },
     extend: {
       colors: {
+        ivory: {
+          DEFAULT: 'hsl(45, 15%, 97%)', // A warm, clean off-white
+          50: 'hsl(45, 15%, 99%)',
+          100: 'hsl(45, 15%, 96%)',
+          200: 'hsl(45, 15%, 92%)',
+          300: 'hsl(45, 15%, 88%)',
+          400: 'hsl(45, 15%, 80%)',
+          500: 'hsl(45, 15%, 70%)',
+          600: 'hsl(45, 15%, 55%)',
+          700: 'hsl(45, 15%, 40%)',
+          800: 'hsl(45, 15%, 25%)',
+          900: 'hsl(45, 15%, 15%)',
+        },
+        beige: {
+          DEFAULT: 'hsl(35, 25%, 90%)', // A warm, subtle beige
+          50: 'hsl(35, 25%, 98%)',
+          100: 'hsl(35, 25%, 95%)',
+          200: 'hsl(35, 25%, 88%)',
+          300: 'hsl(35, 25%, 80%)',
+          400: 'hsl(35, 25%, 70%)',
+          500: 'hsl(35, 25%, 60%)',
+          600: 'hsl(35, 25%, 50%)',
+          700: 'hsl(35, 25%, 40%)',
+          800: 'hsl(35, 25%, 30%)',
+          900: 'hsl(35, 25%, 20%)',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -24,8 +50,8 @@ export default {
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "#003989",
+          foreground: "#003989",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -64,8 +90,8 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ['DM Sans', 'system-ui', 'sans-serif'],
-        dmsans: ['DM Sans', 'sans-serif'],
+        sans: ['General Sans', 'system-ui', 'sans-serif'],
+        dmsans: ['General Sans', 'sans-serif'],
       },
       keyframes: {
         "accordion-down": {

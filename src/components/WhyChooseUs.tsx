@@ -18,14 +18,14 @@ const features = [
   },
   {
     icon: Clock,
-    title: '25+ Years Experience',
+    title: '15+ Years Experience',
     description: 'Decades of proven craftsmanship',
   },
 ];
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-20 bg-muted">
+    <section className="py-40 max-h-4xl bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">

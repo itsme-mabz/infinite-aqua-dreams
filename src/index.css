@@ -12,6 +12,32 @@ All colors MUST be HSL.
     --background: 0 0% 100%;
     --foreground: 210 17% 25%;
 
+    /* Ivory theme for luxury */
+    --ivory: 45 15% 97%;
+    --ivory-50: 45 15% 99%;
+    --ivory-100: 45 15% 96%;
+    --ivory-200: 45 15% 92%;
+    --ivory-300: 45 15% 88%;
+    --ivory-400: 45 15% 80%;
+    --ivory-500: 45 15% 70%;
+    --ivory-600: 45 15% 55%;
+    --ivory-700: 45 15% 40%;
+    --ivory-800: 45 15% 25%;
+    --ivory-900: 45 15% 15%;
+
+    /* Beige theme */
+    --beige: 35 25% 90%;
+    --beige-50: 35 25% 98%;
+    --beige-100: 35 25% 95%;
+    --beige-200: 35 25% 88%;
+    --beige-300: 35 25% 80%;
+    --beige-400: 35 25% 70%;
+    --beige-500: 35 25% 60%;
+    --beige-600: 35 25% 50%;
+    --beige-700: 35 25% 40%;
+    --beige-800: 35 25% 30%;
+    --beige-900: 35 25% 20%;
+
     --card: 0 0% 100%;
     --card-foreground: 210 17% 25%;
 
@@ -61,6 +87,30 @@ All colors MUST be HSL.
     --background: 210 17% 12%;
     --foreground: 0 0% 95%;
 
+    --ivory: 45 10% 18%;
+    --ivory-50: 45 10% 15%;
+    --ivory-100: 45 10% 20%;
+    --ivory-200: 45 10% 25%;
+    --ivory-300: 45 10% 30%;
+    --ivory-400: 45 10% 40%;
+    --ivory-500: 45 10% 50%;
+    --ivory-600: 45 10% 60%;
+    --ivory-700: 45 10% 70%;
+    --ivory-800: 45 10% 80%;
+    --ivory-900: 45 10% 90%;
+
+    --beige: 35 15% 18%;
+    --beige-50: 35 15% 15%;
+    --beige-100: 35 15% 20%;
+    --beige-200: 35 15% 25%;
+    --beige-300: 35 15% 30%;
+    --beige-400: 35 15% 40%;
+    --beige-500: 35 15% 50%;
+    --beige-600: 35 15% 60%;
+    --beige-700: 35 15% 70%;
+    --beige-800: 35 15% 80%;
+    --beige-900: 35 15% 90%;
+
     --card: 210 17% 15%;
     --card-foreground: 0 0% 95%;
 
@@ -95,11 +145,11 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'General Sans', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'General Sans', sans-serif;
     font-weight: 700;
   }
 
@@ -158,5 +208,204 @@ All colors MUST be HSL.
       opacity: 1;
       transform: translateX(0);
     }
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 0.3;
+    }
+  }
+
+  .animate-wave {
+    animation: wave 8s linear infinite alternate;
+  }
+
+  @keyframes wave {
+    0% {
+      transform: translate(0, 0) scale(1);
+      opacity: 0.3;
+    }
+    25% {
+      transform: translate(-10px, -10px) scale(1.05);
+      opacity: 0.4;
+    }
+    50% {
+      transform: translate(10px, 5px) scale(0.95);
+      opacity: 0.25;
+    }
+    75% {
+      transform: translate(-5px, 10px) scale(1.02);
+      opacity: 0.35;
+    }
+    100% {
+      transform: translate(5px, -5px) scale(0.98);
+      opacity: 0.3;
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    25% {
+      transform: translateY(-15px) translateX(10px);
+    }
+    50% {
+      transform: translateY(-5px) translateX(-5px);
+    }
+    75% {
+      transform: translateY(-20px) translateX(-10px);
+    }
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+  }
+
+  .animate-float-delayed {
+    animation: float 7s ease-in-out infinite 1s;
+  }
+
+  .animate-float-slower {
+    animation: float 9s ease-in-out infinite;
+  }
+
+  .animate-float-delayed-slower {
+    animation: float 10s ease-in-out infinite 1.5s;
+  }
+
+  .animate-float-bubble {
+    animation: float-bubble 6s ease-in-out infinite;
+  }
+
+  .animate-float-bubble-delayed {
+    animation: float-bubble 7s ease-in-out infinite 1s;
+  }
+
+  .animate-float-bubble-slower {
+    animation: float-bubble 9s ease-in-out infinite;
+  }
+
+  .animate-float-bubble-delayed-slower {
+    animation: float-bubble 10s ease-in-out infinite 1.5s;
+  }
+
+  .animate-float-bubble-extra {
+    animation: float-bubble 8s ease-in-out infinite 2s;
+  }
+
+  .animate-float-bubble-extra-delayed {
+    animation: float-bubble 11s ease-in-out infinite 0.5s;
+  }
+
+  .animate-wave-enhanced {
+    animation: wave-enhanced 12s ease-in-out infinite alternate;
+  }
+
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+
+  .animate-bounce-enhanced {
+    animation: bounce-enhanced 3s ease-in-out infinite;
+  }
+
+  @keyframes float-bubble {
+    0% {
+      transform: translateY(0) translateX(0) rotate(0deg);
+      opacity: 0.7;
+    }
+    25% {
+      transform: translateY(-25px) translateX(15px) rotate(10deg);
+      opacity: 0.9;
+    }
+    50% {
+      transform: translateY(-10px) translateX(-10px) rotate(-5deg);
+      opacity: 0.6;
+    }
+    75% {
+      transform: translateY(-30px) translateX(-20px) rotate(-15deg);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0deg);
+      opacity: 0.7;
+    }
+  }
+
+  @keyframes wave-enhanced {
+    0% {
+      transform: translate(0, 0) scale(1);
+      opacity: 0.4;
+    }
+    25% {
+      transform: translate(-20px, -15px) scale(1.1);
+      opacity: 0.5;
+    }
+    50% {
+      transform: translate(15px, 10px) scale(0.95);
+      opacity: 0.35;
+    }
+    75% {
+      transform: translate(-10px, 20px) scale(1.05);
+      opacity: 0.45;
+    }
+    100% {
+      transform: translate(10px, -10px) scale(1);
+      opacity: 0.4;
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes bounce-enhanced {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .animate-water-flow {
+    animation: waterFlow 8s linear infinite;
+  }
+
+  .animate-water-flow-delayed {
+    animation: waterFlow 10s linear infinite 1s;
+  }
+
+  .animate-water-flow-slower {
+    animation: waterFlow 12s linear infinite 0.5s;
+  }
+
+  @keyframes waterFlow {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .water-layer {
+    position: relative;
   }
 }

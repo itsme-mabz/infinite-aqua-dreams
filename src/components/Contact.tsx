@@ -20,7 +20,7 @@ const Contact = () => {
     e.preventDefault();
     toast({
       title: "Request Received!",
-      description: "We'll contact you within 24 hours to discuss your project.",
+      description: "We'll contact you within 24 hours to discuss your pool.",
     });
     setFormData({ name: '', email: '', phone: '', service: '', message: '' });
   };
@@ -40,7 +40,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="bg-card p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-card-foreground mb-6">Request a Free Consultation</h3>
+            <h3 className="text-2xl font-bold text-card-foreground mb-6">Request a Free Pool estimate</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <Input
@@ -76,7 +76,7 @@ const Contact = () => {
                   <SelectTrigger className="w-full">
                     <SelectValue placeholder="I need help with..." />
                   </SelectTrigger>
-                  <SelectContent className="bg-popover z-50">
+                  <SelectContent className="bg-secondary text-white hover:bg-secondary active:bg-secondary z-50">
                     <SelectItem value="design">Pool Design & Construction</SelectItem>
                     <SelectItem value="remodel">Pool Remodeling</SelectItem>
                     <SelectItem value="repair">Repairs & Maintenance</SelectItem>
@@ -86,14 +86,14 @@ const Contact = () => {
               </div>
               <div>
                 <Textarea
-                  placeholder="Tell us about your project..."
+                  placeholder="Tell us about your pool..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   rows={4}
                   className="w-full"
                 />
               </div>
-              <Button type="submit" size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold">
+              <Button type="submit" size="lg" className="w-full bg-secondary text-white hover:bg-secondary/90 font-semibold">
                 Get My Free Estimate
               </Button>
             </form>
@@ -146,8 +146,8 @@ const Contact = () => {
               <p className="text-muted-foreground mb-4">
                 Don't wait to build your dream pool. Explore affordable financing options today.
               </p>
-              <Button variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
-                Learn About Financing
+              <Button variant="outline" className="border-secondary bg-secondary text-white hover:bg-secondary">
+                Contact us 
               </Button>
             </div>
           </div>
