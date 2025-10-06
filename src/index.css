@@ -8,83 +8,83 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Modern Luxury Pool Theme */
+    /* Clean Modern Pool Theme */
     --background: 0 0% 100%;
-    --foreground: 220 60% 15%;
+    --foreground: 210 17% 25%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 60% 15%;
+    --card-foreground: 210 17% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 60% 15%;
+    --popover-foreground: 210 17% 25%;
 
-    /* Deep Navy Primary */
-    --primary: 220 60% 15%;
+    /* Vibrant Blue Primary */
+    --primary: 203 89% 53%;
     --primary-foreground: 0 0% 100%;
 
-    /* Turquoise Secondary */
-    --secondary: 180 70% 45%;
+    /* Soft Teal Secondary */
+    --secondary: 174 62% 47%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 20% 95%;
-    --muted-foreground: 220 20% 45%;
+    --muted: 210 17% 96%;
+    --muted-foreground: 210 12% 55%;
 
-    /* Gold Accent */
-    --accent: 45 100% 55%;
-    --accent-foreground: 220 60% 15%;
+    /* Coral Accent */
+    --accent: 14 90% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 20% 90%;
-    --input: 220 20% 90%;
-    --ring: 180 70% 45%;
+    --border: 210 17% 90%;
+    --input: 210 17% 90%;
+    --ring: 203 89% 53%;
 
     --radius: 0.75rem;
 
     /* Custom gradients */
-    --gradient-luxury: linear-gradient(135deg, hsl(220 60% 15%) 0%, hsl(220 50% 25%) 100%);
-    --gradient-water: linear-gradient(135deg, hsl(180 70% 45%) 0%, hsl(190 60% 55%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(45 100% 55%) 0%, hsl(40 90% 50%) 100%);
-    --gradient-overlay: linear-gradient(180deg, rgba(17, 24, 39, 0.7) 0%, rgba(17, 24, 39, 0.4) 100%);
+    --gradient-luxury: linear-gradient(135deg, hsl(203 89% 53%) 0%, hsl(203 89% 43%) 100%);
+    --gradient-water: linear-gradient(135deg, hsl(174 62% 47%) 0%, hsl(184 65% 55%) 100%);
+    --gradient-coral: linear-gradient(135deg, hsl(14 90% 60%) 0%, hsl(20 85% 55%) 100%);
+    --gradient-overlay: linear-gradient(180deg, rgba(25, 25, 35, 0.6) 0%, rgba(25, 25, 35, 0.3) 100%);
 
     /* Shadows */
-    --shadow-luxury: 0 20px 60px -15px hsl(220 60% 15% / 0.3);
-    --shadow-glow: 0 0 40px hsl(180 70% 45% / 0.3);
-    --shadow-card: 0 4px 20px hsl(220 60% 15% / 0.1);
+    --shadow-luxury: 0 20px 60px -15px hsl(203 89% 53% / 0.25);
+    --shadow-glow: 0 0 40px hsl(174 62% 47% / 0.25);
+    --shadow-card: 0 4px 20px hsl(210 17% 25% / 0.08);
 
     /* Animation */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: 220 60% 8%;
+    --background: 210 17% 12%;
     --foreground: 0 0% 95%;
 
-    --card: 220 50% 12%;
+    --card: 210 17% 15%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 220 50% 12%;
+    --popover: 210 17% 15%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 180 70% 45%;
-    --primary-foreground: 220 60% 15%;
+    --primary: 203 89% 53%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 50% 20%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 174 62% 47%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 50% 20%;
-    --muted-foreground: 220 20% 65%;
+    --muted: 210 17% 20%;
+    --muted-foreground: 210 12% 65%;
 
-    --accent: 45 100% 55%;
-    --accent-foreground: 220 60% 15%;
+    --accent: 14 90% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 95%;
 
-    --border: 220 50% 20%;
-    --input: 220 50% 20%;
-    --ring: 180 70% 45%;
+    --border: 210 17% 20%;
+    --input: 210 17% 20%;
+    --ring: 203 89% 53%;
   }
 }
 
@@ -95,11 +95,12 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: 'DM Sans', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
   }
 
   .luxury-gradient {
